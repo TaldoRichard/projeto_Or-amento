@@ -1,15 +1,20 @@
 package entidades;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Cliente {
 	
 	private String nome;
 	private String email;
-	private Integer numero;
+	private String numero;
+	
+	List<Orçamento> orçamentos = new ArrayList<>();
 	
 	public Cliente() {
 	}
 
-	public Cliente(String nome, String email, Integer numero) {
+	public Cliente(String nome, String email, String numero) {
 		this.nome = nome;
 		this.email = email;
 		this.numero = numero;
@@ -31,12 +36,20 @@ public class Cliente {
 		this.email = email;
 	}
 
-	public Integer getNumero() {
+	public String getNumero() {
 		return numero;
 	}
 
-	public void setNumero(Integer numero) {
+	public void setNumero(String numero) {
 		this.numero = numero;
 	}
 
+	@Override
+	public String toString() {
+		return "Nome do cliente: " + nome
+				+ "\nEmail para contato: " + email
+				+ "\nNumero para contato: " + numero;
+	}
+
+	
 }
