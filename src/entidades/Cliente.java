@@ -1,15 +1,12 @@
 package entidades;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Cliente {
 	
 	private String nome;
 	private String email;
 	private String numero;
 	
-	List<Orçamento> orçamentos = new ArrayList<>();
+	//List<Orçamento> orçamentos = new ArrayList<>();
 	
 	public Cliente() {
 	}
