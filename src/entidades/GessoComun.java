@@ -2,19 +2,19 @@ package entidades;
 
 public class GessoComun extends OrçamentoGesso{
 	
-	private Double placasDeGesso;
-	private Double sacosDeGesso;
-	private Double sisal;
-	private Double gessoCola;
-	private Double arame;
-	private Double pitao;
+	private Integer placasDeGesso;
+	private Integer sacosDeGesso;
+	private Integer sisal;
+	private Integer gessoCola;
+	private Integer arame;
+	private Integer pitao;
 	private Double metrosDeNegativo;
 	
 	public GessoComun() {
 	}
 
-	public GessoComun(Double valorMetro, Double largura, Double comprimento, Double nivelDoForro, Double placasDeGesso,
-			Double sacosDeGesso, Double sisal, Double gessoCola, Double arame, Double pitao, Double metrosDeNegativo) {
+	public GessoComun(Double valorMetro, Double largura, Double comprimento, Double nivelDoForro, Integer placasDeGesso,
+			Integer sacosDeGesso, Integer sisal, Integer gessoCola, Integer arame, Integer pitao, Double metrosDeNegativo) {
 		super(valorMetro, largura, comprimento, nivelDoForro);
 		this.placasDeGesso = placasDeGesso;
 		this.sacosDeGesso = sacosDeGesso;
@@ -25,51 +25,51 @@ public class GessoComun extends OrçamentoGesso{
 		this.metrosDeNegativo = metrosDeNegativo;
 	}
 
-	public Double getPlacasDeGesso() {
+	public Integer getPlacasDeGesso() {
 		return placasDeGesso;
 	}
 
-	public void setPlacasDeGesso(Double placasDeGesso) {
+	public void setPlacasDeGesso(Integer placasDeGesso) {
 		this.placasDeGesso = placasDeGesso;
 	}
 
-	public Double getSacosDeGesso() {
+	public Integer getSacosDeGesso() {
 		return sacosDeGesso;
 	}
 
-	public void setSacosDeGesso(Double sacosDeGesso) {
+	public void setSacosDeGesso(Integer sacosDeGesso) {
 		this.sacosDeGesso = sacosDeGesso;
 	}
 
-	public Double getSisal() {
+	public Integer getSisal() {
 		return sisal;
 	}
 
-	public void setSisal(Double sisal) {
+	public void setSisal(Integer sisal) {
 		this.sisal = sisal;
 	}
 
-	public Double getGessoCola() {
+	public Integer getGessoCola() {
 		return gessoCola;
 	}
 
-	public void setGessoCola(Double gessoCola) {
+	public void setGessoCola(Integer gessoCola) {
 		this.gessoCola = gessoCola;
 	}
 
-	public Double getArame() {
+	public Integer getArame() {
 		return arame;
 	}
 
-	public void setArame(Double arame) {
+	public void setArame(Integer arame) {
 		this.arame = arame;
 	}
 
-	public Double getPitao() {
+	public Integer getPitao() {
 		return pitao;
 	}
 
-	public void setPitao(Double pitao) {
+	public void setPitao(Integer pitao) {
 		this.pitao = pitao;
 	}
 
